@@ -34,15 +34,9 @@ message GetAccountsResponse {
 }
 
 service AccountService {
-  rpc PostAccount(PostAccountRequest) returns (PostAccountResponse) {
+  rpc PostAccount(PostAccountRequest) returns (PostAccountResponse) {}
 
-  }
+  rpc GetAccount(GetAccountRequest) returns (GetAccountResponse) {}
 
-  rpc GetAccount(GetAccountRequest) returns (GetAccountResponse) {
-
-  }
-
-  rpc GetAccounts(GetAccountsRequest) returns (GetAccountsResponse) {
-
-  }
+  rpc GetAccounts(GetAccountsRequest) returns (GetAccountsResponse) {}
 }
