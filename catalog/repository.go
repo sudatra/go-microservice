@@ -179,7 +179,7 @@ func (er *elasticRepository) SearchProducts(ctx context.Context, query string, s
 				ID: hit.Id,
 				Name: p.Name,
 				Description: p.Description,
-				Price: p.Name,
+				Price: p.Price,
 			})
 		}
 	}
