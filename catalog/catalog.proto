@@ -1,6 +1,8 @@
 syntax = "proto3";
 package pb;
 
+option go_package = "./";
+
 message Product {
     string id = 1;
     string name = 2;
@@ -41,6 +43,6 @@ service CatalogService {
     rpc PostProduct(PostProductRequest) returns (PostProductResponse) {}
 
     rpc GetProduct(GetProductRequest) returns (GetProductResponse) {}
-    
+
     rpc GetProducts(GetProductsRequest) returns (GetProductsResponse) {}
 }
