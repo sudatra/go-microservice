@@ -35,7 +35,7 @@ type OrderedProduct struct {
 
 type OrderedProductInput struct {
 	ID       string `json:"id"`
-	Quantity string `json:"quantity"`
+	Quantity int    `json:"quantity"`
 }
 
 type PaginationInput struct {
@@ -51,9 +51,9 @@ type Product struct {
 }
 
 type ProductInput struct {
-	Name        string `json:"name"`
-	Description string `json:"description"`
-	Price       string `json:"price"`
+	Name        string  `json:"name"`
+	Description string  `json:"description"`
+	Price       float64 `json:"price"`
 }
 
 type Query struct {

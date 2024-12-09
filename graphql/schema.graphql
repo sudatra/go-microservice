@@ -40,7 +40,7 @@ input AccountInput {
 input ProductInput {
     name: String!
     description: String!
-    price: String!
+    price: Float!
 }
 
 input OrderInput {
@@ -50,7 +50,7 @@ input OrderInput {
 
 input OrderedProductInput {
     id: String!
-    quantity: String!
+    quantity: Int!
 }
 
 type Mutation {
