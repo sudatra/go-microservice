@@ -4,6 +4,7 @@ import (
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/sudatra/go-microservice/account"
 	"github.com/sudatra/go-microservice/catalog"
+	"github.com/sudatra/go-microservice/order"
 )
 
 type Server struct {
